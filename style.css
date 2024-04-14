@@ -1,0 +1,180 @@
+h1,h2,h3{
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+  .border-bleu{
+    color: rgb(154,205,50);
+    text-shadow: 2px 2px 3px black;
+    border: 2px solid rgb(145, 220, 225);
+    padding: 4px 6px;
+    Background-color: rgb(29, 40, 61)  ;    
+  }
+   
+h1{
+	color: rgb(154,205,50);
+  font-size: 100px;
+  box-shadow:8px 8px 10px 0 rgb(0, 0, 0);
+  border-radius: 10px;
+  text-align: center ;
+}
+	
+
+h2{
+	color: rgb(255,255,255);
+	font-size: 18px;
+  text-align: justify ;
+}
+
+h3{
+	color: rgb(154,205,50);
+  font-size : 50px;
+  box-shadow:7px 7px 10px 0 rgb(0, 0, 0);
+  border-radius: 10px;
+  text-align: center ;
+ 
+}
+
+a{
+  text-decoration: none;
+}
+  .card-white {
+    color: rgb(154,205,50);
+    text-shadow: 2px 2px 3px black;
+    border: 2px solid rgb(145, 220, 225);
+    padding: 4px 6px;
+    Background-color: black;    
+  }
+
+
+
+.image-2 {
+  width: 500px; /* Garde la largeur originale de l'image jusqu'à la largeur du conteneur */
+  height: auto; /* Maintient le ratio d'aspect de l'image */
+  display: block; /* Permet de centrer l'image avec margin auto */
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%; /* Assure que l'image ne dépasse pas la largeur de son conteneur */
+  border-radius: 50%; /* Rend l'image ronde */
+}
+
+.image-2:hover {
+  border: 1px solid rgb(145, 220, 225); /* Style de bordure au survol */
+  box-shadow: 3px 3px 2px 0 rgb(145, 220, 225); /* Ombre portée réduite au survol */
+}
+
+
+.image-1 {
+  width: 50px;
+  height: 50px;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+  display: block; /* Ajouté pour s'assurer que margin: auto fonctionne */
+  margin: auto; /* Corrigé pour centrer l'élément */
+
+}
+
+.image-1:hover {
+  border: 1px solid rgb(154, 205, 50);
+  box-shadow: 8px 8px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.diaporama {
+  position: relative;
+  width: 100%; /* Ajustez la largeur du diaporama */
+  height: 400px; /* Ajustez la hauteur du diaporama */
+  overflow: hidden;
+}
+
+.diapositive {
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  background-size: cover;
+  background-position: center;
+  animation: slide 27s infinite;
+}
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+  }
+  3.7% {
+    opacity: 1;
+  }
+  11.1% {
+    opacity: 1;
+  }
+  14.8% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.diapositive:nth-child(1) { animation-delay: -24s; }
+.diapositive:nth-child(2) { animation-delay: -21s; }
+.diapositive:nth-child(3) { animation-delay: -18s; }
+.diapositive:nth-child(4) { animation-delay: -15s; }
+.diapositive:nth-child(5) { animation-delay: -12s; }
+.diapositive:nth-child(6) { animation-delay: -9s; }
+.diapositive:nth-child(7) { animation-delay: -6s; }
+.diapositive:nth-child(8) { animation-delay: -3s; }
+.diapositive:nth-child(9) { animation-delay: 0s; }
+
+h3 {
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+  opacity: 0.8;
+}
+
+h3:hover {
+  opacity: 2;
+}
+
+.container {
+    margin: 0 auto; /* Centrage horizontal */
+    max-width: auto; /* Largeur maximale du contenu */
+    padding: 20px; /* Espacement à l'intérieur du container */
+    box-shadow: 0 3px 5px rgba(0,0,0,0.1); /* Ombre légère pour un effet de profondeur */
+    background-color: rgb(44, 62, 80); /* Couleur de fond du container */
+    border-radius: 8px; /* Bords arrondis */
+}
+
+.card-white {
+      border-radius: 8px; /* Bords arrondis */
+      background-color: rgb(29, 40, 61);
+}
+
+.card-black {
+  background-color: rgb(6, 45, 84);
+  border-radius: 8px; /* Bords arrondis */
+  margin: 0 auto; /* Centrage horizontal */
+  max-width: auto; /* Largeur maximale du contenu */
+  padding: 20px; /* Espacement à l'intérieur du container */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Ombre légère pour un effet de profondeur */
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
